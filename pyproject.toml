@@ -1,0 +1,30 @@
+[project]
+name = "mako-document-downloader"
+version = "0.1.0"
+description = "Downloads the documents of the German energy market communication (EDI@Energy, BNetzA process rules) into a local folder"
+readme = "README.md"
+authors = [{ name = "Jonathan Kossick" }]
+requires-python = ">=3.12"
+dependencies = ["httpx>=0.28"]
+
+[project.scripts]
+mako-document-downloader = "mako_document_downloader.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["mypy>=1.15", "pytest>=8.3", "ruff>=0.11"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = ["I", "B", "UP", "RUF"]
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

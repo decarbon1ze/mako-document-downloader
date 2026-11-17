@@ -1,0 +1,51 @@
+[
+  {
+    "name": "GPKE_Teil1",
+    "title": "GPKE Teil 1 – Einführende Prozessbeschreibung (Lesefassung), Anlage 1a zu BK6-24-174",
+    "valid_from": "2025-06-06",
+    "valid_to": null,
+    "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/BK6-GZ/2024/BK6-24-174/Beschluss/BK6-24-174_GPKE_Teil1_Lesefassung.pdf?__blob=publicationFile"
+  },
+  {
+    "name": "GPKE_Teil2",
+    "title": "GPKE Teil 2 – Fokus Zuordnungsprozesse (Lesefassung), Anlage 1b zu BK6-24-174",
+    "valid_from": "2025-06-06",
+    "valid_to": null,
+    "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/BK6-GZ/2024/BK6-24-174/Beschluss/BK6-24-174_GPKE_Teil2_Lesefassung.pdf?__blob=publicationFile"
+  },
+  {
+    "name": "GPKE_Teil3",
+    "title": "GPKE Teil 3 – Fokus Konfigurationen und Steuerbefehle (Lesefassung), Anlage 1c zu BK6-24-174",
+    "valid_from": "2025-06-06",
+    "valid_to": null,
+    "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/BK6-GZ/2024/BK6-24-174/Beschluss/BK6-24-174_GPKE_Teil3_Lesefassung.pdf?__blob=publicationFile"
+  },
+  {
+    "name": "GPKE_Teil4",
+    "title": "GPKE Teil 4 – Fokus Stammdatenprozesse, Anlage 1d zu BK6-22-024",
+    "valid_from": "2025-06-06",
+    "valid_to": null,
+    "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/BK6-GZ/2022/BK6-22-024/Beschluss/Anlage1d_GPKE_Teil4.pdf?__blob=publicationFile"
+  },
+  {
+    "name": "WiM_Teil1",
+    "title": "WiM Teil 1 – Fokus Basis Prozesse (Lesefassung), Anlage 2a zu BK6-24-174",
+    "valid_from": "2025-06-06",
+    "valid_to": null,
+    "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/BK6-GZ/2024/BK6-24-174/Beschluss/BK6-24-174_WiM_Teil1_Lesefassung_korr.pdf?__blob=publicationFile"
+  },
+  {
+    "name": "WiM_Teil2",
+    "title": "WiM Teil 2 – Fokus Übermittlung von Werten (Lesefassung), Anlage 2b zu BK6-24-174",
+    "valid_from": "2025-06-06",
+    "valid_to": null,
+    "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/BK6-GZ/2024/BK6-24-174/Beschluss/BK6-24-174_WiM_Teil2_Lesefassung.pdf?__blob=publicationFile"
+  },
+  {
+    "name": "MaBiS",
+    "title": "MaBiS (Lesefassung), Anlage 3 zu BK6-24-174",
+    "valid_from": "2025-06-06",
+    "valid_to": null,
+    "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/BK6-GZ/2024/BK6-24-174/Beschluss/BK6-24-174_MaBiS_Lesefassung.pdf?__blob=publicationFile"
+  }
+]

@@ -1,0 +1,41 @@
+# Keeps the MaKo documents in your own GitHub repository up to date.
+# Copy this file to .github/workflows/update-mako-documents.yml of the repository that should hold the documents,
+# adjust the options of mako-document-downloader (see its README).
+name: Update MaKo documents
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Download new documents
+        id: download
+        # commit what could be downloaded, report the failures afterwards
+        continue-on-error: true
+        run: >-
+          uvx --from "git+https://github.com/decarbon1ze/mako-document-downloader" mako-document-downloader download
+          --output mako-documents
+          --summary-file "$RUNNER_TEMP/summary.md"
+      - name: Commit changes
+        run: |
+          git add --all mako-documents
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --file "$RUNNER_TEMP/summary.md"
+          git push
+      - name: Report failed downloads
+        if: steps.download.outcome == 'failure'
+        run: exit 1
