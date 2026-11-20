@@ -12,8 +12,9 @@ The names follow the convention that existing EDI@Energy tooling (e.g. kohlrahbi
   validity if the title has none
 * version: as in the title; titles without one (a handful of 2024 corrections carry only a date) get 0.0, because
   the readers of this convention require a version
-* flags: four characters, "x" (yes) or "o" (no), for: consolidated reading version, extraordinary publication,
-  contains error corrections, informational reading version
+* flags: four characters, "x" (yes) or "o" (no), for: contains error corrections, extraordinary publication,
+  consolidated reading version, informational reading version (the order in which the edi_energy_scraper, and with
+  it kohlrahbi, reads them)
 """
 
 import re
@@ -66,7 +67,7 @@ class TitleInfo:
 
     @property
     def flags(self) -> str:
-        marks = (self.consolidated, self.extraordinary, self.corrected, self.informational)
+        marks = (self.corrected, self.extraordinary, self.consolidated, self.informational)
         return "".join("x" if mark else "o" for mark in marks)
 
 

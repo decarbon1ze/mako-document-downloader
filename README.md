@@ -88,8 +88,9 @@ A file of bdew-mako.de is stored in the folder of every format version it is val
   the version (`codelistederkonfigurationen_1.4`). Titles without a version get `0.0`.
 * dates as `yyyymmdd`, an open end as `99991231`; the publication date is the "Stand" of the title, or the start of
   validity if the title has none
-* `flags`: four characters, `x` for yes and `o` for no: consolidated reading version, extraordinary publication,
-  contains error corrections, informational reading version (the Word/Excel version next to the official PDF)
+* `flags`: four characters, `x` for yes and `o` for no: contains error corrections, extraordinary publication,
+  consolidated reading version, informational reading version (the Word/Excel version next to the official PDF).
+  This is the order in which kohlrahbi reads them.
 * `file id`: the id on bdew-mako.de. A new upload gets a new id, so existing files never change.
 
 This is the layout existing open source tooling for EDI@Energy documents, e.g.
