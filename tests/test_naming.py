@@ -71,7 +71,7 @@ CASES = [
     (
         "Entscheidungsbaum-Diagramme und Codelisten 4.0b mit Fehlerkorrekturen Stand: 7.11.2024",
         "EBD_4.0b",
-        "ooxo",
+        "xooo",
         date(2024, 11, 7),
     ),
     ("Allgemeine Festlegungen 6.1a - informatorische Lesefassung", "allgemeinefestlegungen_6.1a", "ooox", None),
